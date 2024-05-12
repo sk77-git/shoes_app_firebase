@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shoe_shop_firebase/core/constants/app_colors.dart';
 import 'package:shoe_shop_firebase/core/constants/app_strings.dart';
 import 'package:shoe_shop_firebase/core/routes/app_pages.dart';
 
@@ -20,6 +21,8 @@ class _ShoesAppState extends State<ShoesApp> {
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       theme: ThemeData(
+        primaryColor: AppColors.primary,
+        primarySwatch: AppColors.mainColor,
         textTheme: GoogleFonts.urbanistTextTheme(),
       ),
     );

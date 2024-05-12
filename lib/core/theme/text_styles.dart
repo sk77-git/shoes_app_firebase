@@ -11,4 +11,36 @@ class TextStyles {
       color: AppColors.textColor,
     );
   }
+
+  static TextStyle get headLine700 {
+    return const TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.w700,
+      color: AppColors.primaryNeutral500,
+    );
+  }
+
+  static TextStyle get headLine600 {
+    return const TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      color: AppColors.primaryNeutral500,
+    );
+  }
+
+  static TextStyle get bodyText100 {
+    return const TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      color: AppColors.primaryNeutral500,
+    );
+  }
+
+  static TextStyle get bodyText10 {
+    return const TextStyle(
+      fontSize: 11,
+      fontWeight: FontWeight.w400,
+      color: AppColors.primaryNeutral500,
+    );
+  }
 }

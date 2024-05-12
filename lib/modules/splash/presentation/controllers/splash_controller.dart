@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:shoe_shop_firebase/core/constants/app_constants.dart';
 import 'package:shoe_shop_firebase/core/storage/app_stoarge.dart';
-import 'package:shoe_shop_firebase/modules/auth/presentation/pages/login_page.dart';
 import 'package:shoe_shop_firebase/modules/dashboard/presentation/pages/dashboard_page.dart';
 
 class SplashController extends GetxController {
@@ -17,7 +16,9 @@ class SplashController extends GetxController {
       if (AppStorage.getUserToken().isNotEmpty) {
         Get.offAll(() => const DashboardPage());
       } else {
-        Get.offAll(() => const LoginPage());
+        //For now, lets just redirect to Dashboard
+        // Get.offAll(() => const LoginPage());
+        Get.offAll(() => const DashboardPage());
       }
     });
   }
