@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shoe_shop_firebase/core/constants/app_strings.dart';
 import 'package:shoe_shop_firebase/core/routes/app_pages.dart';
 
@@ -18,6 +19,9 @@ class _ShoesAppState extends State<ShoesApp> {
       title: AppStrings.appName,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      theme: ThemeData(
+        textTheme: GoogleFonts.urbanistTextTheme(),
+      ),
     );
   }
 }

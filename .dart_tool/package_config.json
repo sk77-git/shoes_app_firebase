@@ -32,6 +32,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "crypto",
+      "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8",
       "packageUri": "lib/",
@@ -90,6 +96,18 @@
       "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/get_storage-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "google_fonts",
+      "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "http_parser",
@@ -332,7 +350,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-12T08:57:32.996945Z",
+  "generated": "2024-05-12T10:16:23.890645Z",
   "generator": "pub",
   "generatorVersion": "3.3.3"
 }
