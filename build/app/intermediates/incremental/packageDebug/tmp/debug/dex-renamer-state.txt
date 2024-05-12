@@ -1,0 +1,4 @@
+#Sun May 12 14:43:24 NPT 2024
+base.0=D\:\\projects\\shoe_shop_firebase\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
