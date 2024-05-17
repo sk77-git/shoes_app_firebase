@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shoe_shop_firebase/modules/dashboard/data/models/product.dart';
 import 'package:shoe_shop_firebase/modules/dashboard/presentation/widgets/product_card.dart';
+import 'package:shoe_shop_firebase/modules/product_detail/presentation/pages/product_detail_page.dart';
 
 class ProductsPage extends StatefulWidget {
   const ProductsPage({super.key, required this.categoryId});
@@ -29,8 +31,13 @@ class _ProductsPageState extends State<ProductsPage> {
       ),
       itemCount: 10, // Number of items in the grid
       itemBuilder: (BuildContext context, int index) {
-        return ProductCard(
-          product: Product(id: index),
+        return GestureDetector(
+          onTap: () {
+            Get.to(() => const ProductDetailPage());
+          },
+          child: ProductCard(
+            product: Product(id: index),
+          ),
         );
       },
     );

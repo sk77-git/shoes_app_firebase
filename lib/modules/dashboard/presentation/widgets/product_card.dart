@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoe_shop_firebase/core/constants/app_colors.dart';
+import 'package:shoe_shop_firebase/core/theme/app_decorations.dart';
 import 'package:shoe_shop_firebase/core/theme/text_styles.dart';
 import 'package:shoe_shop_firebase/modules/dashboard/data/models/product.dart';
 
@@ -16,10 +17,7 @@ class ProductCard extends StatelessWidget {
         Expanded(
           child: Container(
             padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: AppColors.productCardBgColor,
-            ),
+            decoration: AppDecorations.imageBgDecoration(),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

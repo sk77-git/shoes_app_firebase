@@ -28,6 +28,22 @@ class TextStyles {
     );
   }
 
+  static TextStyle get headLine400 {
+    return const TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
+      color: AppColors.primaryNeutral500,
+    );
+  }
+
+  static TextStyle get headLine300 {
+    return const TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w700,
+      color: AppColors.primaryNeutral400,
+    );
+  }
+
   static TextStyle get bodyText100 {
     return const TextStyle(
       fontSize: 12,
@@ -36,11 +52,19 @@ class TextStyles {
     );
   }
 
+  static TextStyle get bodyText200 {
+    return const TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: AppColors.primaryNeutral400,
+    );
+  }
+
   static TextStyle get bodyText10 {
     return const TextStyle(
       fontSize: 11,
       fontWeight: FontWeight.w400,
-      color: AppColors.primaryNeutral500,
+      color: AppColors.primaryNeutral300,
     );
   }
 }

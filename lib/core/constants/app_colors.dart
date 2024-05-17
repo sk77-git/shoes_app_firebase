@@ -19,8 +19,11 @@ class AppColors {
   );
 
   static const Color textColor = Color(0xFF101010);
+  static const Color primaryNeutral = Color(0xFFFFFFFF);
   static const Color primaryNeutral500 = Color(0xFF101010);
+  static const Color primaryNeutral400 = Color(0xFF6F6F6F);
   static const Color primaryNeutral300 = Color(0xFFB7B7B7);
+  static const Color primaryNeutral200 = Color(0xFFE7E7E7);
   static const Color productCardBgColor = Color(0xFFF3F3F3);
   static const Color starColor = Color(0xFFFCD240);
 }
