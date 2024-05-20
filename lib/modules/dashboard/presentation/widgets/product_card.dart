@@ -22,14 +22,20 @@ class ProductCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.network(
-                  "https://freepngtransparent.com/wp-content/uploads/2023/03/nike-logo-png-157.png",
+                  product.brandIcon ?? "",
                   width: 24,
+                  errorBuilder: (ctx, obj, trace) {
+                    return Container();
+                  },
                 ),
                 Expanded(
                   child: Center(
                     child: Image.network(
-                      "https://www.pngall.com/wp-content/uploads/14/Jordan-Shoes-PNG-HD-Image.png",
+                      product.productThumbnail ?? "",
                       fit: BoxFit.contain,
+                      errorBuilder: (ctx, obj, trace) {
+                        return Container();
+                      },
                     ),
                   ),
                 ),
@@ -41,7 +47,7 @@ class ProductCard extends StatelessWidget {
           height: 10,
         ),
         Text(
-          "Jordan 1 Retro High Tie Dye",
+          product.name ?? "N/A",
           style: TextStyles.bodyText100,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
@@ -60,14 +66,14 @@ class ProductCard extends StatelessWidget {
               width: 6,
             ),
             Text(
-              "4.5",
+              "${product.rating ?? "0.0"}",
               style: TextStyles.headLine700.copyWith(fontSize: 11),
             ),
             const SizedBox(
               width: 6,
             ),
             Text(
-              "(1045 Reviews)",
+              "(${product.reviewCount ?? "0"} Reviews)",
               style: TextStyles.bodyText10,
             ),
           ],
@@ -76,7 +82,7 @@ class ProductCard extends StatelessWidget {
           height: 4,
         ),
         Text(
-          "\$235,00",
+          "\$${product.price ?? "0.0"}",
           style: TextStyles.headLine700.copyWith(fontSize: 14),
         ),
       ],

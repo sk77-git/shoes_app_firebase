@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "447168054624",
+    "project_id": "shoes-app-flutter-13600",
+    "storage_bucket": "shoes-app-flutter-13600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447168054624:android:1c3267ffb3b3ceda8e8a05",
+        "android_client_info": {
+          "package_name": "com.example.shoe_shop_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkTbuMRVjW5N0okpR6ap6-_TasOy-ED1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

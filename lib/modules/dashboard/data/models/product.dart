@@ -3,9 +3,9 @@ class Product {
   String? brandIcon;
   String? productThumbnail;
   String? name;
-  double? rating;
-  int? reviewCount;
-  double? price;
+  num? rating;
+  num? reviewCount;
+  num? price;
 
   Product({
     required this.id,
